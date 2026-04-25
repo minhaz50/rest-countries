@@ -1,0 +1,75 @@
+.header {
+  padding: 28px 0 0;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent),
+    var(--accent-2),
+    transparent
+  );
+  margin-top: 28px;
+  opacity: 0.4;
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-globe {
+  font-size: 2.6rem;
+  filter: drop-shadow(0 0 12px rgba(108, 99, 255, 0.5));
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.header-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.header-subtitle {
+  font-size: 0.82rem;
+  letter-spacing: -0.04em;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

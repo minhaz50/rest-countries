@@ -1,11 +1,12 @@
 import "./App.css";
-import Countries from "./components/Countries/Countries";
+
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <>
-      <Countries />
-    </>
+    <div>
+      <Header />
+    </div>
   );
 }
 
